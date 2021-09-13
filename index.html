@@ -4,12 +4,14 @@
           Tutoriald de programacion web
       </title>
       <link rel="stylesheet"href="./css/style.css" />
+    
     </head>
     <body>
         <h1>Ciudadanos de 4 patas</h1>
         <p>Este es el formulario que debe diligenciar para registrar su mascota </p>
 
-        Fecha de registro: <input type="date"/>
+        Fecha de registro: <input id="date-input" type="date"/>
+        <br />
         Nombre del propietario: <input type="text" /> 
         <br />
         Nombre de la mascota: <input type="text" />
@@ -27,21 +29,27 @@
             <OPTIOn>Mediano</OPTIOn>
             <option>Grande</option>
         </select>
-        <br /> <br />
-        <table style="border:  1px solid;
-         border-collapse: collapse; border-color: orange;
-         padding : 5px;">
-            <thead>
-                <th>Frecha de registro</th>
-                <th>Nombre del propietario</th>
-                <th>Nombre de la mascota</th>
-                <th>Edad</th>
-                <th>Especie</th>
-                <th>Tamaño</th>
-                <th>Acciones </th>
+        <br />
+
+        <input type="button" value="Guardar" />
+        <input type="button" value="Limpiar " /> 
+
+        <br /> <br /><br /><br />
+        
+        <table>
+              <thead>
+                <th class="column-header column-header-id">ID</th>
+                <th class="column-header">Fecha de registro</th>
+                <th class="column-header">Nombre del propietario</th>
+                <th class="column-header">Nombre de la mascota</th>
+                <th class="column-header">Edad</th>
+                <th class="column-header">Especie</th>
+                <th class="column-header">Tamaño</th>
+                <th class="column-header">Acciones </th>
             </thead>
             <tbody>
                 <tr>
+                    <td>1</td>
                     <td>2021-0824</td>
                     <td>Pepito Pérez</td>
                     <td>Motas</td>
@@ -55,5 +63,30 @@
                 </tr>
             </tbody>
         </table>
+        <Script>
+            var i =true;
+            
+            var student = {
+              name: "Pepito Perez",
+              age: 20,
+              faculty: "systems",
+              active: true,
+              sayHello: function(){
+                   console.log("Hey, my name is:",this.name);
+              },
+              sayHelloWithArrow: () => {
+                  let message= "HEY x2";
+                  console.log(message);
+              } 
+        };
+           var printMessage= function printMessage(i= false){ 
+                if (i){
+                console.log("Hello XD");
+                }else{
+                console.log("Good bye..");
+                }
+            }
+           // printMessage();
+        </Script>
     </body>
 </html>

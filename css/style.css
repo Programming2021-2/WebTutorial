@@ -1,5 +1,21 @@
+table {
+    border:  1px solid;
+    border-collapse: collapse; border-color: orange;
+    padding : 5px;
+}            
+
 th {
-         border:  1px solid;
-         border-collapse: collapse; border-color: orange;
-         padding : 5px;
-        }
+    border:  1px solid;
+    border-collapse: collapse; border-color: orange;
+    padding : 5px;
+    }
+
+th.column-header{
+    color:red;
+}
+.column-header-id{
+    font-size:30px;
+}
+#date-input{
+    font-weight: bold ;
+}
