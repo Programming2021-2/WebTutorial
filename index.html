@@ -12,18 +12,18 @@
 
         Fecha de registro: <input id="date-input" type="date"/>
         <br />
-        Nombre del propietario: <input type="text" /> 
+        Nombre del propietario: <input id="owner-input" type="text" /> 
         <br />
-        Nombre de la mascota: <input type="text" />
+        Nombre de la mascota: <input id="petname-input" type ="text" />
         <br />
-        Edad de la mascota: <input type="number" min="0" />
+        Edad de la mascota: <input id="petage-input" type="number d"min="0" />
         <br />
-        Especie: <select >
+        Especie: <select id ="petspecies-input">
             <OPTIOn>Perro</OPTIOn>
             <option>Gato</option>
         </select>
         <br />
-        Tamaño: <select>
+        Tamaño: <select id="petsize-input">
             <OPTIOn>Miniatura</OPTIOn>
             <option>Pequeño</option>
             <OPTIOn>Mediano</OPTIOn>
@@ -31,8 +31,8 @@
         </select>
         <br />
 
-        <input type="button" value="Guardar" />
-        <input type="button" value="Limpiar " /> 
+        <input id="petsave-button" type="button" value="Guardar" />
+        <input id ="petclean-button" type="button" value="Limpiar " /> 
 
         <br /> <br /><br /><br />
         
@@ -47,10 +47,10 @@
                 <th class="column-header">Tamaño</th>
                 <th class="column-header">Acciones </th>
             </thead>
-            <tbody>
-                <tr>
+            <tbody id="body-table">
+                <!--<tr>
                     <td>1</td>
-                    <td>2021-0824</td>
+                    <td>2021-08-24</td>
                     <td>Pepito Pérez</td>
                     <td>Motas</td>
                     <td>5 meses</td>
@@ -60,33 +60,9 @@
                      <input type="button" value="Editar" />
                     <input type="button" value="Eliminar" />
                     </td>
-                </tr>
+                </tr>-->
             </tbody>
         </table>
-        <Script>
-            var i =true;
-            
-            var student = {
-              name: "Pepito Perez",
-              age: 20,
-              faculty: "systems",
-              active: true,
-              sayHello: function(){
-                   console.log("Hey, my name is:",this.name);
-              },
-              sayHelloWithArrow: () => {
-                  let message= "HEY x2";
-                  console.log(message);
-              } 
-        };
-           var printMessage= function printMessage(i= false){ 
-                if (i){
-                console.log("Hello XD");
-                }else{
-                console.log("Good bye..");
-                }
-            }
-           // printMessage();
-        </Script>
+        <Script src="./js/main.js"></script> 
     </body>
 </html>
