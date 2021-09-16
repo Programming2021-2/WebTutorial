@@ -47,8 +47,12 @@ document.getElementById("petsave-button").onclick = function(){
     document.getElementById("body-table").appendChild(tr);
 
 };
+document.getElementById("show-image").onclick = function(){
+    fetch('https://dog.ceo/api/breeds/image/random')
+  .then(response => response.json())
+  .then(data => console.log(data));
 
-
+};
 
 
 
@@ -149,6 +153,4 @@ var printMessage = function printMessage(i = false) {
     } else {
         console.log("Good bye..");
     }
-}
-           // printMessage();
-           */
+}*/
